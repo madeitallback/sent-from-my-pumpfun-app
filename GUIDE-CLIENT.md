@@ -41,7 +41,20 @@ Puis **Deployments → … → Redeploy**. C'est tout.
 
 ---
 
-## 2. Mettre à jour les callouts (~1 min, quand tu veux)
+## 2. Mettre à jour les callouts : un clic
+
+### Une seule fois (~3 min)
+1. Pour que les mises à jour se publient toutes seules, le site doit être relié au dépôt GitHub dans Vercel (**Add New → Project → Import** le dépôt). C'est le cas si tu l'as importé depuis GitHub.
+2. Ouvre la page **`/update`** de ton site (ex. `https://ton-site.com/update`) et suis les étapes :
+   - **glisse le bouton « ↻ Callouts $App » dans ta barre de favoris** ;
+   - **crée une clé GitHub** limitée à ce dépôt (le lien et les réglages exacts sont sur la page), colle-la et clique sur **Enregistrer**.
+
+### Ensuite, à chaque fois
+Va sur la page du coin sur pump.fun et clique sur **↻ Callouts $App** dans tes favoris. Les callouts partent sur GitHub et le site se met à jour tout seul en une minute environ.
+
+> Le bouton marche sur Chrome, Brave et Edge. Utilise toujours le même navigateur : la clé est enregistrée dans celui-ci.
+
+### Méthode de secours (si le bouton ne marche pas)
 1. Ouvre https://pump.fun/coin/49nkLrXi8nCZBVKsShDNasEtPe4Vn1mx9Xbr3kTa8pTL
 2. Appuie sur **F12**, ouvre l'onglet **Console**, colle le contenu de `tools/export-callouts.js` et appuie sur **Entrée**.
-3. Un fichier `callouts.json` se télécharge : remplace celui du dossier `data/` et redéploie.
+3. Un fichier `callouts.json` se télécharge : sur GitHub, ouvre le dossier `data`, puis **Add file → Upload files**, dépose le fichier et valide. Le site se met à jour tout seul.
