@@ -45,9 +45,11 @@ Puis **Deployments → … → Redeploy**. C'est tout.
 
 ### Une seule fois (~3 min)
 1. Pour que les mises à jour se publient toutes seules, le site doit être relié au dépôt GitHub dans Vercel (**Add New → Project → Import** le dépôt). C'est le cas si tu l'as importé depuis GitHub.
-2. Ouvre la page **`/update`** de ton site (ex. `https://ton-site.com/update`) et suis les étapes :
-   - **glisse le bouton « ↻ Callouts $App » dans ta barre de favoris** ;
-   - **crée une clé GitHub** limitée à ce dépôt (le lien et les réglages exacts sont sur la page), colle-la et clique sur **Enregistrer**.
+2. Ouvre la page **`/update`** de ton site (ex. `https://ton-site.com/update`) :
+   - **Le bouton :** affiche ta barre de favoris (`Ctrl+Maj+B`, ou `Cmd+Maj+B` sur Mac) et **glisse le bouton « ↻ Callouts $App »** dedans.
+   - **La clé GitHub :** clique sur le lien de la page, qui ouvre GitHub avec le formulaire déjà rempli. Choisis seulement le dépôt du site à « Repository access », clique sur **Generate token**, copie le code `github_pat_…`, colle-le sur la page `/update` et clique sur **Enregistrer**.
+
+   Cette clé ne peut modifier que ce dépôt et reste dans ton navigateur.
 
 ### Ensuite, à chaque fois
 Va sur la page du coin sur pump.fun et clique sur **↻ Callouts $App** dans tes favoris. Les callouts partent sur GitHub et le site se met à jour tout seul en une minute environ.

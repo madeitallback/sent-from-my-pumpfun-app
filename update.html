@@ -42,10 +42,9 @@
   <section class="card">
     <h2>2. La clé GitHub (une seule fois)</h2>
     <ol>
-      <li>Ouvre <a href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener" style="color:var(--green)">github.com → nouveau token</a> (Fine-grained).</li>
-      <li><b>Repository access</b> : « Only select repositories » → le dépôt du site.</li>
-      <li><b>Permissions → Contents</b> : « Read and write ». Rien d'autre.</li>
-      <li>Génère le token, copie-le et colle-le ici.</li>
+      <li>Clique sur <a href="https://github.com/settings/personal-access-tokens/new?name=Callouts+App&description=Mise+a+jour+des+callouts+du+site&expires_in=none&contents=write" target="_blank" rel="noopener" style="color:var(--green)"><b>ce lien</b></a> (connecte-toi à GitHub si on te le demande). Le formulaire est déjà rempli.</li>
+      <li>À <b>Repository access</b>, choisis « Only select repositories » puis le dépôt du site.</li>
+      <li>Clique sur <b>Generate token</b> en bas, copie le code qui commence par <code>github_pat_</code> et colle-le ci-dessous.</li>
     </ol>
     <label for="repo">Dépôt (propriétaire/nom)</label>
     <input id="repo" placeholder="madeitallback/sent-from-my-pumpfun-app" autocomplete="off" spellcheck="false">
