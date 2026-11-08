@@ -1,0 +1,7 @@
+.vercel
+.env*
+# local tooling: Claude settings and skills, the preview server
+.claude
+.impeccable
+# the delivery zip is built from this folder
+*.zip

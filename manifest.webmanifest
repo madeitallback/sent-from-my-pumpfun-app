@@ -1,0 +1,19 @@
+{
+  "name": "Sent from my Pumpfun App ($App)",
+  "short_name": "$App",
+  "description": "Every cycle has a signature. Live $App market cap, trades, meme studio and profile kit.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0b0b0e",
+  "theme_color": "#0b0b0e",
+  "icons": [
+    { "src": "assets/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable" },
+    { "src": "assets/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ],
+  "shortcuts": [
+    { "name": "Meme studio", "url": "./#studio", "icons": [{ "src": "assets/icon-192.png", "sizes": "192x192" }] },
+    { "name": "Chart", "url": "./#chart", "icons": [{ "src": "assets/icon-192.png", "sizes": "192x192" }] }
+  ]
+}

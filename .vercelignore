@@ -1,0 +1,13 @@
+# local tooling: the Impeccable skill, the preview server, Claude settings
+.claude
+.impeccable
+# the callouts export script runs in the browser console on pump.fun, not on the site
+tools
+# setup notes, not part of the site
+supabase.sql
+GUIDE-CLIENT.md
+PROMPT-CLAUDE.md
+*.zip
+# secrets and Vercel's own link data never ship
+.env*
+.vercel
